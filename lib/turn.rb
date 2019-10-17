@@ -37,7 +37,6 @@ def turn (board)
   input_to_index(input)
   if valid_move?(board, index) == true
     puts index
-  else turn (board)
     #move(board, index, current_player="X")
   #display_board (board)
 #else turn (board)
