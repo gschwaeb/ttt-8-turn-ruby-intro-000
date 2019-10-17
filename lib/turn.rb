@@ -35,9 +35,9 @@ def turn
   input = gets.strip
   input_to_index(input)
   index=input_to_index(input)
-  if valid_move?(board, index) == false
-    turn
-  else move(board, index, current_player="X")
+  if valid_move?(board, index) == true
+    move(board, index, current_player="X")
+  else turn
   end
 display_board (board)
 end
