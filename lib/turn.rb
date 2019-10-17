@@ -36,4 +36,5 @@ def turn (board)
   index = gets.strip
   input_to_index(index)
   move(board, index, current_player="X")
+  display_board (board)
 end
