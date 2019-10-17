@@ -22,8 +22,8 @@ elsif board[index] ==  "X"||"O"
 end
 end
 
-def input_to_index(input)
-  index = input.to_i - 1
+def input_to_index(index)
+  index.to_i - 1
 end
 
 def move(board, index, current_player="X")
@@ -32,8 +32,8 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input = gets.strip
-  input_to_index(input)
+  index = gets.strip
+  input_to_index(index)
   if valid_move?(board, index) == true
     move(board, index, current_player="X")
   else turn(board)
